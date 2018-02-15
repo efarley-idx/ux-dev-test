@@ -12,4 +12,4 @@ To complete the test you will need to clone the repository, install the angular 
 1. Run the command ```npm install```
 1. Run the command ```ng serve```
 1. Open a web browser and navigate to http://localhost:4200
-1. Follow the instructs provided in the webpage where you will be tasked with adding a new page to the application that displays a list of customers with their details.
+1. Follow the instructions provided in the webpage where you will be tasked with adding a new page to the application that displays a list of customers with their details.

@@ -1,18 +1,46 @@
 <div class="welcome">
   <h1>Welcome Candidate</h1>
   <p>
-    You have been tasked with completing the following user story.
+    You have been tasked with completing the following user story:
   </p>
-  <h3>Display a list of customers with details</h3>
+  <h3>Display a list of customers with togglable details</h3>
   <h4>Description</h4>
   <p>
-    A user should be able to click on the 'Customer Directory' link where they will be routed to /customers. On the customers route the user should see a list of customers returned using a GET request.
+    A user should be able to click on the 'Customer Directory' link where they will be routed to /customer-directory. On the customer directory route the user should see a list of customers returned using a GET request. The details of each customer should be hidden initially. Clicking on a customers card should expand the details for that customer. Clicking again should close the details.
   </p>
   <h4>Acceptance Criteria</h4>
   <ul>
-    <li>Users can navigate to /customer using the Customer Directory link located on the homepage</li>
+    <li>Users can navigate to /customer-directory using the Customer Directory link located on the homepage</li>
     <li>Users should see a list of customers with their details hidden by default</li>
-    <li>Users should be able to click on a customer to expand the customer details</li>
+    <li>Users should be able to click on a customer to expand or collapse the customer details</li>
     <li>Follows the provided design as closely as possible considering you can't inspect the design</li>
   </ul>
+  <h4>Design</h4>
+  <img src="assets/design.png" class="design" />
+  <h4>API</h4>
+  <div>
+    <strong>URL</strong> <em>./mocks/customer-directory.json</em><br />
+    <strong>Method</strong> <em>GET</em><br />
+    <strong>Response</strong>
+    <pre>
+      <code>[&#123;
+        address: string,
+        city: string,
+        logo: string,
+        name: string,
+        phone: string,
+        state: string,
+        zipcode: string
+      &#125;]</code>
+    </pre>
+  </div>
+  <h4>Tips</h4>
+  <p>While you are not required to use any of the following the application has been configured with <strong>Angular Material</strong>, <strong>Angular Animations</strong>, and the <strong>Angular Icon Font</strong> for your convenience.</p>
+  <h4>What's next?</h4>
+  <ol>
+    <li>Open the repositories root directory and delete the <em>`node_modules`</em> directory (If you don't do this you will be unable to submit your code).</li>
+    <li>Zip the repositories directory</li>
+    <li>Email the .zip file to <a href="mailto:ryan.johnson@idexpertscorp.com">ryan.johnson@idexpertscorp.com</a></li>
+    <li>Be ready to discuss your code</li>
+  </ol>
 </div>

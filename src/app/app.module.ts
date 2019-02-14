@@ -9,6 +9,8 @@ import { AppComponent } from './app.component';
 import { FourOhFourComponent } from './modules/four-oh-four/four-oh-four.component';
 import { routes } from './app.routes';
 import { WelcomeModule } from './modules/welcome/welcome.module';
+import { CustomerDirectoryModule } from './modules/customer-directory/customer-directory.module';
+import {CustomerService} from './modules/customer-directory/customer.service';
 
 @NgModule({
   declarations: [
@@ -21,9 +23,10 @@ import { WelcomeModule } from './modules/welcome/welcome.module';
     FlexLayoutModule,
     MatButtonModule,
     RouterModule.forRoot(routes),
-    WelcomeModule
+    WelcomeModule,
+    CustomerDirectoryModule
   ],
-  providers: [],
+  providers: [CustomerService, ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

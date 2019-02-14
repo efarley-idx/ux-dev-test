@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="header card">
+    <img alt="logo" class="logo" [src]="customer.logo" />
+    <p class="title">{{customer.name}}</p>
+    <button mat-icon-button (click)="isToggled = !isToggled" class="expand-button">
+      <mat-icon *ngIf="!isToggled" aria-label="expand_more">expand_more</mat-icon>
+      <mat-icon *ngIf="isToggled" aria-label="expand_less">expand_less</mat-icon>
+    </button>
+  </div>
+  <div class="details card" *ngIf="isToggled">
+    <div><span class="bold">{{customer.name}}</span></div>
+    <div>{{customer.address}}</div>
+    <div>{{customer.phone}}</div>
+  </div>
+</div>

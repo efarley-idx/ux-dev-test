@@ -1,0 +1,6 @@
+<div *ngIf="customers">
+  <div *ngFor="let customer of customers">
+    <app-customer [customer]="customer"></app-customer>
+  </div>
+</div>
+<p *ngIf="error" class="error">{{error | json}}</p>
